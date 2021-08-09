@@ -5,7 +5,8 @@ phases:
         python: 3.8
   build:
     commands:
-      - sam package --template-file template.yaml --s3-bucket passmapi-server --output-template-file passmapi-packaged-template.yml
+      - sam package --template-file template.yaml --s3-bucket passmapi-api --output-template-file passmapi-packaged-template.yml --image_repositories ["HelloWorldFunction=541382795025.dkr.ecr.us-west-1.amazonaws.com/helloworldfunction", "GetPasswords=541382795025.dkr.ecr.us-west-1.amazonaws.com/getpasssword"]
+
 artifacts:
   files:
     - passmapi-packaged-template.yml

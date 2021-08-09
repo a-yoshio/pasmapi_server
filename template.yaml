@@ -15,6 +15,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       PackageType: Image
+      ImageUri: 541382795025.dkr.ecr.us-west-1.amazonaws.com/helloworldfunction
       Events:
         HelloWorld:
           Type: Api
@@ -29,6 +30,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       PackageType: Image
+      ImageUri: 541382795025.dkr.ecr.us-west-1.amazonaws.com/getpasssword
       Events:
         GetPasswords:
           Type: Api

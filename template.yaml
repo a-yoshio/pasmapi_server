@@ -15,6 +15,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       PackageType: Image
+      ImageUri: 541382795025.dkr.ecr.us-west-1.amazonaws.com/helloworldfunction
       Events:
         HelloWorld:
           Type: Api
@@ -29,15 +30,16 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       PackageType: Image
+      ImageUri: 541382795025.dkr.ecr.us-west-1.amazonaws.com/getpasssword
       Events:
-        HelloWorld:
+        GetPasswords:
           Type: Api
           Properties:
-            Path: ./get-passes
+            Path: /passes
             Method: get
     Metadata:
       DockerTag: nodejs14.x-v1
-      DockerContext: ./hello-world
+      DockerContext: ./get-passes
       Dockerfile: Dockerfile
 Outputs:
   HelloWorldApi:

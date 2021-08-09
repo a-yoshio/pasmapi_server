@@ -32,7 +32,7 @@ Parameters:
     Default: "GitHub"
   FullRepositoryId:
     Type: String
-    Default: "a-yoshio/pasmapi_server"
+    Default: "a-yoshio/pasmapi-server"
   MainGitBranch:
     Type: String
     Default: "master"
@@ -41,40 +41,40 @@ Parameters:
     Default: "template.yaml"
   TestingRegion:
     Type: String
-    Default: "ap-northeast-1"
+    Default: "us-west-1"
   TestingStackName:
     Type: String
-    Default: "passmapi-server-main"
+    Default: "passmapi-server-1"
   TestingPipelineExecutionRole:
     Type: String
-    Default: "arn:aws:iam::541382795025:role/aws-sam-cli-managed-passmapi-PipelineExecutionRole-1W1C3GAK3DQ10"
+    Default: "arn:aws:iam::541382795025:role/aws-sam-cli-managed-passmapi-PipelineExecutionRole-JSN1695OSN3B"
   TestingCloudFormationExecutionRole:
     Type: String
-    Default: "arn:aws:iam::541382795025:role/aws-sam-cli-managed-passm-CloudFormationExecutionR-OB3TU2EDNRCT"
+    Default: "arn:aws:iam::541382795025:role/aws-sam-cli-managed-passm-CloudFormationExecutionR-10TDF9FV0593E"
   TestingArtifactBucket:
     Type: String
-    Default: "aws-sam-cli-managed-passmapi-serv-artifactsbucket-bozee5p8inww"
+    Default: "aws-sam-cli-managed-passmapi-serv-artifactsbucket-o3c4vxir9rvl"
   TestingImageRepository:
     Type: String
-    Default: "541382795025.dkr.ecr.ap-northeast-1.amazonaws.com/aws-sam-cli-managed-passmapi-server-cicd-stage1-pipeline-resources-imagerepository-gsatwoqqeg0k"
+    Default: "541382795025.dkr.ecr.us-west-1.amazonaws.com/aws-sam-cli-managed-passmapi-server-cicd-stage1-pipeline-resources-imagerepository-atxkk3tmexut"
   ProdRegion:
     Type: String
-    Default: "ap-northeast-1"
+    Default: "us-west-1"
   ProdStackName:
     Type: String
-    Default: "passmapi-server-main2"
+    Default: "passmapi-server-2"
   ProdPipelineExecutionRole:
     Type: String
-    Default: "arn:aws:iam::541382795025:role/aws-sam-cli-managed-passmapi-PipelineExecutionRole-1A9AKOY1CW5BY"
+    Default: "arn:aws:iam::541382795025:role/aws-sam-cli-managed-passmapi-PipelineExecutionRole-1LSHY1UP96EP2"
   ProdCloudFormationExecutionExeRole:
     Type: String
-    Default: "arn:aws:iam::541382795025:role/aws-sam-cli-managed-passm-CloudFormationExecutionR-1ICFPI1OQHWQY"
+    Default: "arn:aws:iam::541382795025:role/aws-sam-cli-managed-passm-CloudFormationExecutionR-A56B3H5V68N8"
   ProdArtifactBucket:
     Type: String
-    Default: "aws-sam-cli-managed-passmapi-serv-artifactsbucket-w4q9ep9es76w"
+    Default: "aws-sam-cli-managed-passmapi-serv-artifactsbucket-1cvsnpa1srej"
   ProdImageRepository:
     Type: String
-    Default: "541382795025.dkr.ecr.ap-northeast-1.amazonaws.com/aws-sam-cli-managed-passmapi-server-cicd-stage2-pipeline-resources-imagerepository-ejmaotk0ulgi"
+    Default: "541382795025.dkr.ecr.us-west-1.amazonaws.com/aws-sam-cli-managed-passmapi-server-cicd-stage2-pipeline-resources-imagerepository-dqrq6hc1seyp"
   # CodeStarConnectionArn and FeatureGitBranch are required for pipelines for feature branches
   CodeStarConnectionArn:
     Type: String
